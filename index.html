@@ -34,7 +34,7 @@
         <!-- StyleSheet -->
         <link rel="stylesheet" href="css/style.css" />
     </head>
-    <body>
+    <body class="container">
         <main class="row">
             <!-- Banner section -->
             <section class="col-lg-6">
@@ -67,10 +67,10 @@
                     <!-- memory Selection Section -->
                     <div class="ms-0 my-4">
                         <h4 class="my-1 fw-bold">Memory</h4>
-                        <button id="memory-8gb-cost" class="btn btn-outline-secondary my-2">
+                        <button id="memory-8gb-cost" class="btn btn-outline-success my-2">
                             8GB unified memory
                         </button>
-                        <button id="memory-16gb-cost" class="btn btn-outline-secondary my-2">
+                        <button id="memory-16gb-cost" class="btn btn-outline-danger my-2">
                             16GB unified memory
                         </button>
                     </div>
@@ -78,13 +78,13 @@
                     <!-- storage Selection Section -->
                     <div class="ms-0 my-4">
                         <h4 class="my-1 fw-bold">Storage</h4>
-                        <button id="256gb-ssd-cost" class="btn btn-outline-secondary my-2">
+                        <button id="256gb-ssd-cost" class="btn btn-outline-success my-2">
                             256GB SSD storage
                         </button>
-                        <button id="512gb-ssd-cost" class="btn btn-outline-secondary my-2">
+                        <button id="512gb-ssd-cost" class="btn btn-outline-info my-2">
                             512GB SSD storage
                         </button>
-                        <button id="1tb-ssd-cost" class="btn btn-outline-secondary my-2">
+                        <button id="1tb-ssd-cost" class="btn btn-outline-danger my-2">
                             1TB SSD storage
                         </button>
                     </div>
@@ -97,7 +97,7 @@
                         <button id="free-shiping-cost" class="btn btn-outline-secondary my-2">
                             Friday, Aug 25 FREE Prime Delivery
                         </button>
-                        <button id="paid-shiping-cost" class="btn btn-outline-secondary my-2">
+                        <button id="paid-shiping-cost" class="btn btn-outline-primary my-2">
                             Monday, Aug 21 Delivery charge $20
                         </button>
                     </div>
@@ -130,6 +130,19 @@
                         </div>
                         <div class="col-md-5"></div>
                     </div>
+
+                    <!-- input promocode section -->
+                    <div class="ms-0 my-3">
+                        <h6 class="fw-bold">Add Promo code</h6>
+                        <input class="custom-input"  type="text" id="promo-input">
+                        <button id="apply-promo" class="btn btn-danger">Apply</button>
+                    </div>
+                </div> 
+            </section>
+            <!-- offer price section -->
+            <section class="border-top border-1 border-secondary bg-light">
+                <div class="text-center p-3">
+                    <h1 class="fw-bold">Total: $<span id="offer-total">1299</span></h1>
                 </div>
             </section>
         </main>
