@@ -1,0 +1,6 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+.custom-border{
+    border-bottom: 2px solid rgb(170, 170, 170);
+}
