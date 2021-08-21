@@ -2,6 +2,26 @@
 function setPriceBySpacification(item, cost) {
     const itemSelection = document.getElementById(item + "-cost");
     itemSelection.innerText = cost;
+
+    totalPrice();
+}
+// collect value function
+function getValue(section) {
+    const item = document.getElementById(section + "-cost");
+    const itemValue = parseInt(item.innerText);
+    return itemValue;
+}
+
+// calculate total function
+function totalPrice() {
+    const productCost = getValue("product");
+    const memoryCost = getValue("memory");
+    const storageCost = getValue("storage");
+    const deliveryCost = getValue("delivery");
+    const totalCost = productCost + memoryCost + storageCost + deliveryCost;
+
+    // set total price
+    document.getElementById("total-price").innerText = totalCost;
 }
 
 /* Memory cost */
