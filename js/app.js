@@ -86,6 +86,7 @@ document.getElementById("apply-promo").addEventListener("click", function () {
     const promoCode = "stevekaku";
     if (inputCode.toLowerCase() == promoCode.toLowerCase()) {
         document.getElementById("offer-total").innerText = discount;
-    }  
+        inputField.setAttribute("style", "display: none;");
+    }
     inputField.value = "";
 });
